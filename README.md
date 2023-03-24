@@ -3,6 +3,8 @@ Wymysorys Computational Morphology Package Version 0.2
 22.09.2020
 Author: Lukas Mielczarek
 
+More information available at: https://lukasmielczarek.de/index.php/computerlinguistik/
+
 Includes:
 1. Wymysorys Test Suit Version 0.2 - Automated Tool for Morphological Analysis: testsuit.py, TestData, WordTypes
 2. Custom Python library for morphological analysis using xfst: xfstlib.py
