@@ -1,0 +1,13 @@
+der+Article+def+N+pl+gen
+
+der+Article+def+M+pl+acc
+
+der+Article+def+F+pl+dat
+
+der+Article+def+N+sg+gen
+
+der+Article+def+N+sg+nom
+
+der+Article+indef+N+sg+nom
+
+der+Article+indef+F+sg+dat

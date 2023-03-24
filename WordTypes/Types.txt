@@ -1,0 +1,71 @@
+{
+"Article":
+    {
+    "Definiteness":
+        ["def","indef"],
+    "Gender":
+        ["M","N","F"],
+    "Number":
+        ["sg","pl"],
+    "Case":
+        ["nom","acc","dat","gen"]
+    },
+"Preposition":
+    {
+    "Suffixed":
+        ["",
+        {"Article":
+            {
+            "Clitic Marker":
+                ["Cl+Article"],
+            "Definiteness":
+                ["def","indef"],
+            "Gender":
+                ["M","N","F"],
+            "Number":
+                ["sg","pl"],
+            "Case":
+                ["nom","acc","dat","gen"]
+            }
+        }
+        ]
+    },
+"Noun":
+    {
+    "Gender":
+        ["M","N","F"],
+    "Number":
+        ["sg","pl"],
+    "Case":
+        ["nom","acc","dat","gen"]
+    },
+"Adjective":
+    {
+    "Type":
+        ["","sup",
+        {
+        "Comparative":
+            {
+            "Comparative":
+                ["comp"],
+            "Comparative Type":
+                ["pred","indef","def"],
+            "Gender":
+                ["M","N","F"],
+            "Number":
+                ["sg","pl"],
+            "Case":
+                ["nom","acc","dat"]
+            }
+        }
+        ],
+    "Class":
+        ["c1","c2","c3","c4","c5","c5a","c5b","c6"],
+    "Gender":
+        ["M","N","F"],
+    "Number":
+        ["sg","pl"],
+    "Case":
+        ["nom","acc","dat"]
+    }
+}

@@ -1,0 +1,616 @@
+Multichar_Symbols +Article +M +F +N +nom +acc +dat +sg +pl +def +indef +Preposition +Noun /u /ou /d +Cl +gen @U.GEN.ALLOWED@ @R.GEN.ALLOWED@ /a /2u /2ou /3u /3ou +c1 +c2 +c3 +c4 +c5 +c6 +c5a +c5b /oe +comp +sup +pred /comp /aadj /radj
+
+LEXICON Root
+        Articles ;
+        Prepositions ;
+        Nouns ;
+        Adjectives ;
+
+LEXICON Articles
+der+Article+def:0       Art_def ;
+der+Article+indef:ȧ     Art_indef ;
+
+LEXICON Art_def
++M+sg+nom:der       # ;
++M+sg+acc:yn        # ;
++M+sg+dat:ym        # ;
++M+sg+gen:s         # ;
++N+sg+nom:s         # ;
++N+sg+acc:s         # ;
++N+sg+dat:ym        # ;
++N+sg+gen:yr        # ;
++F+sg+nom:dy        # ;
++F+sg+acc:dy        # ;
++F+sg+dat:yr        # ;
++F+sg+gen:s         # ;
+                    Art_def_pl1 ;      !plural articles falling together for all genders
+
+LEXICON Art_def_pl1
++M:0    Art_def_pl2 ;
++F:0    Art_def_pl2 ;
++N:0    Art_def_pl2 ;
+
+LEXICON Art_def_pl2
++pl+nom:dy          # ;
++pl+acc:dy          # ;
++pl+dat:yn          # ;
++pl+gen:der         # ;
++pl+gen:yr          # ;
+
+LEXICON Art_indef
++M+sg+nom:0         # ;
++M+sg+acc:n         # ;
++M+sg+dat:m         # ;
++N+sg+nom:0         # ;
++N+sg+acc:0         # ;
++N+sg+dat:m         # ;
++F+sg+nom:0         # ;
++F+sg+acc:0         # ;
++F+sg+dat:r         # ;
+
+
+LEXICON Prepositions
+y/an    Prep_suff ;
+uf      Prep_suff ;
+by      Prep_suff ;
+cy      Prep_suff ;
+fu      Prep_suff ;
+fjy     Prep_suff ;
+nö      Prep_suff ;
+myt     Prep_suff ;
+undyr   Prep_suff ;
+
+LEXICON Prep_suff                                ! suffixed prepositions using clitic variants of articles
++Preposition+Cl+Article+def:0   Art_suff_def ;
++Preposition:0                  # ;                 ! no suffix = just plain Preposition
+
+LEXICON Art_suff_def
+        Art_suff_def_sg ;
+        Art_suff_def_pl1 ;
+                            
+LEXICON Art_suff_def_sg
++M+sg+acc:^a    # ;
++M+sg+acc:^n    # ;
++M+sg+dat:^m    # ;
++N+sg+dat:^m    # ;
++F+sg+dat:^r    # ;
+
+LEXICON Art_suff_def_pl1
++M:0    Art_suff_def_pl2 ;
++N:0    Art_suff_def_pl2 ;
++F:0    Art_suff_def_pl2 ;
+
+LEXICON Art_suff_def_pl2
++pl+dat:^a      # ;
++pl+dat:^n      # ;
+
+LEXICON Nouns
+!masculine
+kyz     N_M1 ;   !class 1 - no morphological marking for plural
+kyng    N_M1 ;
+śtȧn    N_M1 ;
+büzum   N_M1 ;
+noma    N_M1 ;
+p/uuś       N_M1 ;   !class 1 with umlaut
+w/uiöen   N_M1 ;
+c/3uon      N_M1 ;
+f/ouan      N_M1 ;
+z/uak       N_M1 ;
+śr/uuma   N_M1 ;
+w/uiöen   N_M1 ;
+bozum   N_M1 ;
+kȧjm    N_M2_c1 ;   !class 2 - ending -a   c1 -> -a in dat  !attention: not all of M2 exhibit case marking (find examples)
+fjyśt   N_M2_c1 ;
+ryk     N_M2_c1 ;
+kjyt    N_M2_c2 ;   !c2 -> -a in acc & dat
+menć    N_M2_c2 ;
+obrozł  N_M2_c2 ;   !loanword; no proof of class! 
+büw     N_M2_c2 ;
+öks     N_M2_c2 ;
+tȧjh    N_M2_c2 ;                       !c1 or c2? unclear
+śtejł   N_M3 ;   !class 3 - ending -n
+śtül    N_M3 ;
+oütor   N_M3 ;   !no proof of class!
+engl    N_M3 ;
+f/uöguł   N_M3 ;                          !class 3 with umlaut
+tełer   N_M3 ;
+@U.GEN.ALLOWED@śiłer    N_M3 ;
+@U.GEN.ALLOWED@f/2uoter      N_M3 ;
+!feminine
+mȧśin   N_F1 ;  !class 1 - no morphological marking for plural
+korün   N_F1 ;
+h/uand     N_F1 ;  !class 1 with umlaut
+b/uank     N_F1 ;
+k/uü         N_F1 ;
+p/uulk     N_F1 ;
+m/uiöed   N_F1 ;
+b/uejn     N_F1 ;
+ś/uejn     N_F1 ;
+c/uejn     N_F1 ;
+g/uonz     N_F1 ;
+fiöerw  N_F2 ;          !class2 - ending -a
+ȧnt     N_F2 ;
+krankyt N_F2 ;
+zah     N_F2 ;
+zoü     N_F2 ;
+p/uulk  N_F2 ;         !attention: has two possible declension types (the other one above in N_F1)
+kyh     N_F2 ;
+cȧjt    N_F2 ;
+kr/uoft N_F2 ;
+fȧkl    N_F3 ;  ! class 3 - ending -n
+regl    N_F3 ;
+wynduł  N_F3 ;
+gȧsuł   N_F3 ;
+mȧjł    N_F3 ;
+kwał    N_F3 ;
+gügl    N_F3 ;
+aksuł   N_F3 ;
+ś/uül   N_F3 ;
+anker   N_F3 ;
+@U.GEN.ALLOWED@müter    N_F3 ;
+śłoüder N_F3 ;
+yter    N_F3 ;
+t/uohter    N_F3 ;
+h/uün   N_F3 ;
+śłȧjs   N_F3 ;
+śłap    N_F3 ;
+fader   N_F3 ;
+!neuter
+brat    N_N1 ;  ! class 1 - no morphological marking for plural
+mjer    N_N1 ;
+kroüc   N_N1 ;
+hemb    N_N1 ;
+fłȧk    N_N1 ;
+moüł    N_N1 ;
+ban     N_N1 ;
+gyłysta N_N1 ;
+typa    N_N1 ;
+mügjaasa    N_N1 ;
+pela    N_N1 ;
+rȧjnła  N_N1 ;
+mȧźi    N_N1 ;
+miźi    N_N1 ;
+kni     N_N1 ;  ! two forms (see beneath)
+bet     N_N1 ;
+bihła   N_N1 ;
+oüg     N_N2 ;  ! class 2 - ending -a
+wang    N_N2 ;
+celt    N_N2 ;
+projekt N_N2 ;  ! no source
+kni     N_N2 ;
+he      N_N2 ;
+bȧjśpil N_N3 ;  ! class 3 - ending -n
+korol   N_N3 ;
+tȧl     N_N3 ;
+werkl   N_N3 ;
+bȧjł    N_N3 ;
+bynzuł  N_N3 ;
+fał     N_N3 ;
+cymer   N_N3 ;
+fanster N_N3 ;
+fojer   N_N3 ;
+füder   N_N3 ;
+maser   N_N3 ;
+fȧl     N_N3 ;
+oüter   N_N3 ;
+water   N_N3 ;
+w/2ouoser    N_N3 ;
+/2ue     N_N3 ;
+@U.GEN.ALLOWED@kynd     N_N3 ;
+w/2uüt   N_N3 ;
+rür     N_N3 ;
+popjyr  N_N3 ;
+kanür   N_N3 ;
+jür     N_N3 ;
+ür      N_N3 ;
+!names
+@U.GEN.ALLOWED@jüza     N_M1 ;
+@U.GEN.ALLOWED@tüma     N_M1 ;
+@U.GEN.ALLOWED@jȧśkia   N_M1 ;
+
+LEXICON N_M1
++Noun+M:0    N_1 ;
+
+LEXICON N_M2_c1
++Noun+M:0    N_M2_c1_num ;
+
+LEXICON N_M2_c2
++Noun+M:0    N_M2_c2_num ;
+
+LEXICON N_M3
++Noun+M:0    N_3 ;
+
+LEXICON N_F1
++Noun+F:0    N_1 ;
+
+LEXICON N_F2
++Noun+F:0    N_2 ;
+
+LEXICON N_F3
++Noun+F:0    N_3 ;
+
+LEXICON N_N1
++Noun+N:0    N_1 ;
+
+LEXICON N_N2
++Noun+N:0    N_2 ;
+
+LEXICON N_N3
++Noun+N:0    N_3 ;
+
+LEXICON N_1
+            N_sg ;
++pl:/d      N_sp_case_pl ;
+
+LEXICON N_2
+            N_sg ;
+            N_2_pl ;
+
+LEXICON N_M2_c1_num
++sg:0       N_M2_c1_sg ;
+            N_2_pl ;
+
+LEXICON N_M2_c2_num
++sg:0       N_M2_c2_sg ;
+            N_2_pl ;
+
+LEXICON N_3
+            N_sg ;
++pl:^n/d    N_case_pl ;
+
+LEXICON N_2_pl
++pl:^a/d    N_case_pl ;
+
+LEXICON N_sg                !standard sg
++sg:0       N_case_sg ;
+
+LEXICON N_M2_c1_sg
+            N_M2_dat_sg ;
+            N_nom_acc_sg ;
+            
+LEXICON N_M2_c2_sg
+            N_M2_dat_acc_sg ;
+            N_nom_sg ;
+
+LEXICON N_M2_dat_acc_sg
++acc:^a     # ;
+            N_M2_dat_sg ;
+            
+LEXICON N_M2_dat_sg
++dat:^a     # ;
+
+LEXICON N_nom_acc_sg
++acc:0      # ;
+            N_nom_sg ;
+
+LEXICON N_nom_sg            ! including genitive case (also constant)
++nom:0      # ;
++gen:^s@R.GEN.ALLOWED@     # ;
+
+LEXICON N_case_sg   !zero case for all
++dat:0      # ;
+            N_nom_acc_sg ;
+            
+LEXICON N_sp_case_pl
++dat:^A     # ;
+            N_nom_acc_pl ;
+
+LEXICON N_case_pl
++dat:0      # ;
+            N_nom_acc_pl ;
+
+LEXICON N_nom_acc_pl
++nom:0      # ;
++acc:0      # ;
+
+LEXICON Adjectives
+bywȧjt          adj_marker ;
+güt             adj_marker ;
+śejn            adj_marker ;
+śłȧht           adj_marker ;
+duł             adj_marker ;
+świöecer        adj_marker ;
+k/uołd          adj_marker ;
+rut             adj_marker ;
+kośer           adj_marker ;
+ȧjzera          adj_marker ;
+śm/2uoł         adj_marker ;
+gröp            adj_marker ;
+gr/uus          adj_marker ;
+ł/uong          adj_marker ;
+w/2uiöem        adj_marker ;
+/uołd           adj_marker ;
+j/uung          adj_marker ;
+k/2uüc          adj_marker ;
+h/uuh           adj_marker ;
+śt/uiöek        adj_marker ;
+klin            adj_marker ;    ! no proof
+jyśt            adj_marker ;    ! no proof
+łȧjht           adj_marker ;
+ryś             adj_marker ;
+
+LEXICON adj_marker
++Adjective:/radj            adj_degree ;
++Adjective:/aadj            adj_classes_a ;
+
+LEXICON adj_degree
+                        adj_classes ;
++comp:/comp/d           adj_comp ;
++sup:/comp/d^st         adj_classes ;
+        
+LEXICON adj_classes
++c1:0   adj_c1 ;
++c2:0   adj_c2 ;
++c3:0   adj_c3 ;
++c4:0   adj_c4 ;
++c5:0   adj_c5 ;
++c5a:0  adj_c5a ;
++c5b:0  adj_c5b ;
++c6:0   adj_c6 ;
+        
+LEXICON adj_c1
+        adj_c1_sg ;
+        adj_c1_pl ;
+
+LEXICON adj_c1_F
++F+sg+nom:^y    # ;
++F+sg+acc:^y    # ;
+
+LEXICON adj_c1_sg
+        adj_c1_c4_sg ;
+        adj_c1_sg_dat_com ;
+        
+LEXICON adj_c1_c2_c3_c4_sg
++M+sg+nom:^er   # ;
++M+sg+acc:^a    # ;
+                adj_c1_F ;
+        
+LEXICON adj_c1_c4_sg
+                adj_c1_c2_c3_c4_sg ;
++N+sg+nom:^ys    # ;
++N+sg+acc:^ys    # ;
+
+LEXICON adj_c3_c5_sg
+        adj_c2_N ;
+        adj_c1_c2_c3_c4_sg ;
+
+LEXICON adj_c1_sg_dat_com
++M+sg+dat:^um   # ;
++F+sg+dat:^er   # ;
++N+sg+dat:^um   # ;
+
+LEXICON adj_c1_pl
++M:0    adj_c1_pl_marker ;
++N:0    adj_c1_pl_marker ;
++F:0    adj_c1_pl_marker ;
+
+LEXICON adj_c1_pl_marker
++pl:0   adj_c1_pl_case ;
+
+LEXICON adj_c1_pl_case
++nom:^y     # ;
++acc:^y     # ;
++dat:^a     # ;
+
+LEXICON adj_c2
+        adj_c1_sg ;
+        adj_c2_N ;
+        adj_c1_pl ;
+        
+LEXICON adj_c2_N
++N+sg+nom:0     # ;
++N+sg+acc:0     # ;
+        
+LEXICON adj_c3
+        adj_c3_c5_sg ;
+        adj_c1_pl ;
+        adj_c1_sg_dat_com ;
+        
+LEXICON adj_c4
+        adj_c1_c4_sg ;
++M:0    adj_c4_sg_dat_MN ;
++N:0    adj_c4_sg_dat_MN ;
+        adj_c4_sg_dat_com ;
+        adj_c1_pl ;
+
+LEXICON adj_c4_sg_dat_MN
++sg+dat:^am     # ;
+
+LEXICON adj_c4_sg_dat_com
++M:0    adj_c4_sg_dat_com2 ;
++N:0    adj_c4_sg_dat_com2 ;
++F:0    adj_c4_sg_dat_com2 ;
+
+LEXICON adj_c4_sg_dat_com2
++sg+dat:^a      # ;
+
+LEXICON adj_c5
+        adj_c1_pl ;
+        adj_c4_sg_dat_com ;
+        adj_c3_c5_sg ;
++F+sg+nom:/oe   # ;     ! optionally endingless adjectives in f. sg.
++F+sg+acc:/oe   # ;
++F+sg+dat:/oe   # ;
+        
+LEXICON adj_c5a
++F+sg+dat:^y    # ;
+                adj_c5 ;
+
+LEXICON adj_c5b
++M+sg+nom:^y    # ;
+                adj_c5a ;
+
+LEXICON adj_c6
+                adj_c1_pl ;
++M+pl:0         adj_c4_pl2 ;
++F+pl:0         adj_c4_pl2 ;
++N+pl:0         adj_c4_pl2 ;
+                adj_c4_sg_dat_com ;
+                adj_c1_F ;
++F+sg+dat:^y    # ;
++M+sg+nom:^y    # ;
++M+sg+acc:^a    # ;
++N+sg+nom:^y    # ;
++N+sg+acc:^y    # ;
+
+LEXICON adj_c4_pl2
++nom:^a         # ;
++acc:^a         # ;
+
+LEXICON adj_classes_a
++c1:0   adj_gen_a ;
++c2:0   adj_gen_a ;
++c3:0   adj_gen_a ;
++c4:0   adj_gen_a ;
++c5:0   adj_gen_a ;
++c5a:0  adj_gen_a ;
++c5b:0  adj_gen_a ;
++c6:0   adj_gen_a ;
++c4+M+sg+acc:^n    # ;
++c4+M+pl+dat:^n    # ;
+
+LEXICON adj_gen_a
++M:0    adj_num_a ;
++N:0    adj_num_a ;
++F:0    adj_num_a ;
+
+LEXICON adj_num_a
++pl:0   adj_case_a ;
++sg:0   adj_case_a ;
+
+LEXICON adj_case_a
++nom:0  # ;
++acc:0  # ;
++dat:0  # ;
+
+LEXICON adj_comp                    ! missing: vowel change for comparative
++indef:0    adj_comp_indef ;
++def:0      adj_comp_def ;
++pred:0     adj_comp_pred ;     ! for adjectives in comparative form in predicative function (always forms in -er)
+
+LEXICON adj_comp_indef
+                adj_comp_com ;
++N+sg:0         adj_comp_indef_N ;
+                adj_comp_indef_er_pl ;
+
+LEXICON adj_comp_indef_N
++nom:^yś        # ;
++acc:^yś        # ;
+                adj_comp_indef_er_N ;
+
+LEXICON adj_comp_indef_er_N
++nom:^erys      # ;
++acc:^erys      # ;
+
+LEXICON adj_comp_indef_er_pl
++M:0            adj_comp_indef_er_pl2 ;
++F:0            adj_comp_indef_er_pl2 ;
++N:0            adj_comp_indef_er_pl2 ;
+
+LEXICON adj_comp_indef_er_pl2
++pl:0           adj_comp_indef_er_pl3 ;
+
+LEXICON adj_comp_indef_er_pl3
++nom:^er        # ;
++acc:^er        # ;
+
+LEXICON adj_comp_def
+                adj_comp_com ;
++N+sg:0         adj_comp_er_def_N ;
++M+sg:0         adj_comp_er_def_M ;
+
+LEXICON adj_comp_er_def_N
++nom:^ery       # ;
++acc:^ery       # ;
+
+LEXICON adj_comp_er_def_M
++nom:^ery  # ;
+
+LEXICON adj_comp_com
++M+sg:0         adj_comp_com_M ;
++F+sg:0         adj_comp_com_F ;
++N+sg:0         adj_comp_com_N ;
+                adj_comp_com_pl ;
+
+LEXICON adj_comp_com_M
++acc:^yn        # ;
+                adj_comp_com_er_M ;
+                adj_comp_com_dat ;
+
+LEXICON adj_comp_com_er_M
++nom:^er        # ;
++nom:^erer      # ;
++acc:^era       # ;
+
+LEXICON adj_comp_com_F
+                adj_comp_com_FN ;
+                adj_comp_com_er_F ;
+
+LEXICON adj_comp_com_FN
+                adj_comp_com_er_FN ;
+                adj_comp_com_dat ;
+
+LEXICON adj_comp_com_er_FN
++nom:^er        # ;
++acc:^er        # ;
+
+LEXICON adj_comp_com_N
+                adj_comp_com_FN ;
+
+LEXICON adj_comp_com_er_F
++nom:^ery       # ;
++acc:^ery       # ;
+
+LEXICON adj_comp_com_dat
++dat:^yn        # ;
+                adj_comp_com_er_dat ;
+
+LEXICON adj_comp_com_er_dat
++dat:^era       # ;
+
+LEXICON adj_comp_com_pl
++M:0            adj_comp_com_pl2 ;
++F:0            adj_comp_com_pl2 ;
++N:0            adj_comp_com_pl2 ;
+
+LEXICON adj_comp_com_pl2
++pl:0           adj_comp_com_pl3 ;
+
+LEXICON adj_comp_com_pl3
++nom:0          adj_comp_com_pl_underspec ;
++acc:0          adj_comp_com_pl_underspec ;
++dat:0          adj_comp_com_pl_underspec ;
+                adj_comp_com_er_pl_case ;
+
+LEXICON adj_comp_com_pl_underspec
+0:^yn           # ;
+
+LEXICON adj_comp_com_er_pl_case
++nom:^ery       # ;
++acc:^ery       # ;
++dat:^era       # ;
+
+LEXICON adj_comp_pred
++M+sg:0         adj_comp_pred_M_sg ;
++F+sg:0         adj_comp_pred_F_sg ;
++N+sg:0         adj_comp_pred_N_sg ;
++M+pl:0         adj_comp_com_er_pl_case ;
++F+pl:0         adj_comp_com_er_pl_case ;
++N+pl:0         adj_comp_com_er_pl_case ;
+                adj_comp_indef_er_pl ;
+
+LEXICON adj_comp_pred_M_sg
+                adj_comp_com_er_M ;
+                adj_comp_er_def_M ;
+                adj_comp_com_er_dat ;
+
+LEXICON adj_comp_pred_F_sg
+                adj_comp_com_er_FN ;
+                adj_comp_com_er_dat ;
+                adj_comp_com_er_F ;
+
+LEXICON adj_comp_pred_N_sg
+                adj_comp_com_er_FN ;
+                adj_comp_indef_er_N ;
+                adj_comp_er_def_N ;
+                adj_comp_com_er_dat ;
