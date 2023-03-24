@@ -1,4 +1,4 @@
-# WymysorysCompMorph
+# A finite-state morphological grammar of Wymysorys
 Wymysorys Computational Morphology Package Version 0.2
 22.09.2020
 Author: Lukas Mielczarek
